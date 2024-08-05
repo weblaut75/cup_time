@@ -45,7 +45,7 @@ export const CartProvider = ({ children }) => {
       removeFromCart(productId)
     } else {
       setCart(
-        cart.map(item => item.id = productId ? { ...item, quantity } : item),
+        cart.map(item => item.id === productId ? { ...item, quantity } : item),
       );
     }
   }

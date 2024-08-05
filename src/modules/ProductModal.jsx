@@ -35,9 +35,7 @@ const handleDecrease = () => {
   }
 }
 const handleIncrease = () => {
-
   setQuantity(quantity + 1);
-
 }
 
 const handleAddToCart = () => {
